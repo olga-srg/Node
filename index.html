@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Задание 1</title>
+</head>
+<body>
+
+
+  
+
+
+
+
+<script type="text/javascript" >
+
+ /*
+
+
+ let act = prompt ('Выберите действие: +, -, *, /')
+let firstAction = prompt('Введите первое число');
+let secondAction = prompt('Введите второе число');
+let result;
+
+
+switch (act) {
+  case '+':
+    result = Number(firstAction) + Number(secondAction);
+    alert(result);
+    break;
+  case '-':
+  result = Number(firstAction) - Number(secondAction);
+    alert(result);
+    break;
+  case '/':
+   if (secondAction == 0) {
+        alert('На 0 делить нельзя');
+      } else {
+        result = Number(firstAction) / Number(secondAction);
+        alert(result);
+      }
+    break;
+    case '*':
+    result = Number(firstAction) * Number(secondAction);
+    alert(result);
+    break;
+  default:
+    alert('Вы ввели неправильный символ');
+}
+
+//
+
+
+
+
+
+let firstСurrency = prompt('Вы хотите поменять: UAH, USD, EUR (копируйте в поле обозначение валюты)');
+let secondСurrency =  prompt('На какую валюту вы хотите поменять: UAH, USD, EUR (копируйте в поле обозначение валюты)');
+let value = prompt('Введите, сколько вы хотите обменять'+ ' ' + (firstСurrency)); 
+
+let result;
+
+
+if (firstСurrency === 'UAH' && secondСurrency === 'USD'){
+   let result = Number(value) * 0.040;
+alert ('Вы получите' + ' ' + (result) + ' ' +(secondСurrency));
+}
+if (firstСurrency === 'UAH' && secondСurrency === 'EUR'){
+   let result = Number(value) * 0.036;
+alert (result);
+}
+if (firstСurrency === 'UAH' && secondСurrency === 'UAH'){
+alert ('Вы не можете поменять на эту валюту!');
+}
+
+if (firstСurrency === 'USD' && secondСurrency === 'UAH'){
+   let result = Number(value) * 27.40;
+alert ('Вы получите' + ' ' + (result) + ' ' +(secondСurrency));
+}
+if (firstСurrency === 'USD' && secondСurrency === 'EUR'){
+   let result = Number(value) * 0.90;
+alert (result);
+}
+if (firstСurrency === 'USD' && secondСurrency === 'USD'){
+alert ('Вы не можете поменять на эту валюту!');
+}
+
+if (firstСurrency === 'EUR' && secondСurrency === 'UAH'){
+   let result = Number(value) * 27.56;
+alert ('Вы получите' + ' ' + (result) + ' ' +(secondСurrency));
+}
+if (firstСurrency === 'EUR' && secondСurrency === 'USD'){
+   let result = Number(value) * 1.12;
+alert (result);
+}
+if (firstСurrency === 'EUR' && secondСurrency === 'EUR'){
+alert ('Вы не можете поменять на эту валюту!');
+}
+*/
+
+
+
+
+let firstСurrency = prompt('Вы хотите поменять: UAH, USD, EUR (копируйте в поле обозначение валюты)');
+
+
+if (firstСurrency === 'UAH' || 'USD' || 'EUR'){
+ 
+}
+else{
+  alert('Введите валюту!');
+
+}
+
+
+let secondСurrency =  prompt('На какую валюту вы хотите поменять: UAH, USD, EUR (копируйте в поле обозначение валюты)');
+
+if (firstСurrency === secondСurrency){
+  alert ('Вы ввели одинаковые валюты!');
+}
+
+
+
+let value = prompt('Введите, сколько вы хотите обменять'+ ' ' + (firstСurrency)); 
+
+let result;
+
+
+if (firstСurrency === 'UAH' && secondСurrency === 'USD'){
+   let result = Number(value) * 0.040;
+alert ('Вы получите' + ' ' + (result) + ' ' +(secondСurrency));
+}
+if (firstСurrency === 'UAH' && secondСurrency === 'EUR'){
+   let result = Number(value) * 0.036;
+alert (result);
+}
+if (firstСurrency === 'UAH' && secondСurrency === 'UAH'){
+alert ('Вы не можете поменять на эту валюту!');
+}
+
+if (firstСurrency === 'USD' && secondСurrency === 'UAH'){
+   let result = Number(value) * 27.40;
+alert ('Вы получите' + ' ' + (result) + ' ' +(secondСurrency));
+}
+if (firstСurrency === 'USD' && secondСurrency === 'EUR'){
+   let result = Number(value) * 0.90;
+alert (result);
+}
+if (firstСurrency === 'USD' && secondСurrency === 'USD'){
+alert ('Вы не можете поменять на эту валюту!');
+}
+
+if (firstСurrency === 'EUR' && secondСurrency === 'UAH'){
+   let result = Number(value) * 27.56;
+alert ('Вы получите' + ' ' + (result) + ' ' +(secondСurrency));
+}
+if (firstСurrency === 'EUR' && secondСurrency === 'USD'){
+   let result = Number(value) * 1.12;
+alert (result);
+}
+if (firstСurrency === 'EUR' && secondСurrency === 'EUR'){
+alert ('Вы ввели одинаковые валюты!');
+}
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
