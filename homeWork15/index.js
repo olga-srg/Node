@@ -1,11 +1,11 @@
-const Eventemit = require('events');
-const emit = new Eventemit();
+const EventEmitter = require('events');
+const myEmit = new EventEmitter();
 const fs = require('fs');
 const timeLog = new Date();
 const now = timeLog.toUTCString();
 
 
-emit.on('Login', function (userName, now, status) {
+myEmit.on('Login', function (userName, now, status) {
     if (status) {
         fs.appendFileSync('logFile', '\n' + now + ' - ' + userName + ' вошёл в систему');
         console.log(now + ' - ' + userName + ' вошёл в систему');
@@ -16,13 +16,13 @@ emit.on('Login', function (userName, now, status) {
 });
 
 
-emit.on('Logout', function (userName, logoutTime) {
+myEmit.on('Logout', function (userName, logoutTime) {
     fs.appendFileSync('logFile', '\n' + userName + ' вышел из системы: ' + logoutTime);
     console.log(userName + ' вышел из системы: ' + logoutTime);
 });
 
 
-emit.emit('Login', 'User', now, true);
-emit.emit('Login', 'User', now, false);
-emit.emit('Logout', 'User', '14:20');
+myEmit.emit('Login', 'User', now, true);
+myEmit.emit('Login', 'User', now, false);
+myEmit.emit('Logout', 'User', '14:20');
 
